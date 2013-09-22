@@ -1,12 +1,7 @@
-/**
- * 
- */
-package com.freewifihk.android;
+// © 2013 onarray <http://www.onarray.com>
 
-/**
- * @author Tom Vincent
- *
- */
+package com.onarray.freewifihk;
+
 public class Premise {
 	private Double longitude;
 	private Double latitude;

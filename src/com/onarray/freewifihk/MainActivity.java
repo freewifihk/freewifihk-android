@@ -1,6 +1,8 @@
-package com.freewifihk.android;
+// © 2013 onarray <http://www.onarray.com>
 
-import static com.freewifihk.android.Util.readFile;
+package com.onarray.freewifihk;
+
+import static com.onarray.freewifihk.Util.readFile;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,6 +16,7 @@ import org.json.JSONObject;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
+import com.onarray.freewifihk.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;

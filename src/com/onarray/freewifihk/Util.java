@@ -1,4 +1,6 @@
-package com.freewifihk.android;
+// © 2013 onarray <http://www.onarray.com>
+
+package com.onarray.freewifihk;
 
 import java.io.BufferedReader;
 import java.io.IOException;
