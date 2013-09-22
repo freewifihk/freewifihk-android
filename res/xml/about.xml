@@ -24,6 +24,22 @@
             android:data="http://www.onarray.com" />
     </Preference>
     <Preference
+        android:key="@string/contact"
+        android:summary="@string/contact_summary"
+        android:title="@string/contact" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="mailto:contact@freewifihk.com" />
+    </Preference>
+    <Preference
+        android:key="@string/twitter"
+        android:summary="@string/twitter_summary"
+        android:title="@string/twitter" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://twitter.com/freewifihk" />
+    </Preference>
+    <Preference
         android:key="@string/donate"
         android:summary="@string/donate_summary"
         android:title="@string/donate" >

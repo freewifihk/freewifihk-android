@@ -14,5 +14,9 @@
     <string name="donate_summary">Like what you see? We need your help!</string>
     <string name="issues">Issues</string>
     <string name="issues_summary">Spotted an issue? Report it on our issue tracker</string>
+    <string name="contact">Contact</string>
+    <string name="contact_summary">Email us on contact@freewifihk.com</string>
+    <string name="twitter">Twitter</string>
+    <string name="twitter_summary">Tweet us on @freewifihk</string>
 
 </resources>
