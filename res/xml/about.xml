@@ -21,7 +21,7 @@
         android:title="@string/author" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://www.onarray.com" />
+            android:data="http://www.onarray.com" />
     </Preference>
     <Preference
         android:key="@string/donate"
@@ -29,7 +29,7 @@
         android:title="@string/donate" >
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://donate.freewifihk.com" />
+            android:data="http://donate.freewifihk.com" />
     </Preference>
     <Preference
         android:key="@string/issues"
