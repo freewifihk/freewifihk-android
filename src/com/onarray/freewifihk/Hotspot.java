@@ -2,14 +2,14 @@
 
 package com.onarray.freewifihk;
 
-public class Premise {
+public class Hotspot {
 	private Double longitude;
 	private Double latitude;
 	private String address;
 	private int accuracy;
 	private String name;
 
-	public Premise(Double longitude, Double latitude, String address,
+	public Hotspot(Double longitude, Double latitude, String address,
 			int accuracy, String name) {
 		this.longitude = longitude;
 		this.latitude = latitude;
@@ -18,7 +18,7 @@ public class Premise {
 		this.name = name;
 	}
 
-	public Premise(Double longitude, Double latitude, String name) {
+	public Hotspot(Double longitude, Double latitude, String name) {
 		this.longitude = longitude;
 		this.latitude = latitude;
 		this.name = name;

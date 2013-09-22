@@ -35,7 +35,7 @@ public class MainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		List<Premise> premises = getPremises();
+		List<Hotspot> hotspots = getHotspots();
 
 		GoogleMap map;
 		map = ((SupportMapFragment) getSupportFragmentManager()
@@ -43,39 +43,39 @@ public class MainActivity extends FragmentActivity {
 
 		map.moveCamera(CameraUpdateFactory.newLatLngZoom(HONG_KONG, 10));
 
-		for (Premise premise : premises) {
+		for (Hotspot hotspot : hotspots) {
 			map.addMarker(new MarkerOptions().position(
-					new LatLng(premise.getLatitude(), premise.getLongitude()))
-					.title(premise.getName()));
+					new LatLng(hotspot.getLatitude(), hotspot.getLongitude()))
+					.title(hotspot.getName()));
 		}
 	}
 
-	private List<Premise> getPremises() {
-		List<Premise> premises = new ArrayList<Premise>();
+	private List<Hotspot> getHotspots() {
+		List<Hotspot> hotspots = new ArrayList<Hotspot>();
 		try {
-			JSONArray json = new JSONArray(readPremises());
+			JSONArray json = new JSONArray(readHotspots());
 
 			for (int i = 0; i < json.length(); i++) {
-				JSONObject premise = json.getJSONObject(i);
+				JSONObject hotspot = json.getJSONObject(i);
 
-				Double longitude = premise.getDouble("longitude");
-				Double latitude = premise.getDouble("latitude");
-				String name = premise.getString("name");
+				Double longitude = hotspot.getDouble("longitude");
+				Double latitude = hotspot.getDouble("latitude");
+				String name = hotspot.getString("name");
 
-				premises.add(new Premise(longitude, latitude, name));
+				hotspots.add(new Hotspot(longitude, latitude, name));
 			}
 
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
 
-		return premises;
+		return hotspots;
 	}
 
-	private String readPremises() {
+	private String readHotspots() {
 		String file = "";
 		try {
-			InputStream in = getBaseContext().getAssets().open("premises.json");
+			InputStream in = getBaseContext().getAssets().open("hotspots.json");
 			file = readFile(in);
 			in.close();
 		} catch (IOException e) {
