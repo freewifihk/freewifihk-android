@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/about_freewifihk" />
+
+    <Preference
+        android:key="@string/about"
+        android:summary="@string/description"
+        android:title="@string/about" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.freewifihk.com" />
+    </Preference>
+    <Preference
+        android:key="@string/version"
+        android:title="@string/version" >
+    </Preference>
+    <Preference
+        android:key="@string/author"
+        android:summary="@string/author_summary"
+        android:title="@string/author" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.onarray.com" />
+    </Preference>
+    <Preference
+        android:key="@string/donate"
+        android:summary="@string/donate_summary"
+        android:title="@string/donate" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://donate.freewifihk.com" />
+    </Preference>
+    <Preference
+        android:key="@string/issues"
+        android:summary="@string/issues_summary"
+        android:title="@string/issues" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/freewifihk/freewifihk-android/issues" />
+    </Preference>
+    <Preference
+        android:key="@string/source"
+        android:summary="@string/source_summary"
+        android:title="@string/source" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/freewifihk/freewifihk-android" />
+    </Preference>
+
+</PreferenceScreen>

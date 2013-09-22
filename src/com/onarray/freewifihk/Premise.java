@@ -8,7 +8,7 @@ public class Premise {
 	private String address;
 	private int accuracy;
 	private String name;
-	
+
 	public Premise(Double longitude, Double latitude, String address,
 			int accuracy, String name) {
 		this.longitude = longitude;
@@ -17,7 +17,7 @@ public class Premise {
 		this.accuracy = accuracy;
 		this.name = name;
 	}
-	
+
 	public Premise(Double longitude, Double latitude, String name) {
 		this.longitude = longitude;
 		this.latitude = latitude;
@@ -63,6 +63,5 @@ public class Premise {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 
 }
