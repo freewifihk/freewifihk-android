@@ -2,20 +2,21 @@
 
 Discover free Wi-Fi hotspots in Hong Kong.
 
+## Install
+
 [![FreeWifiHK on Google Play][playth]][play]
 
   [play]: https://play.google.com/store/apps/details?id=com.onarray.freewifihk
   [playth]: https://developer.android.com/images/brand/en_generic_rgb_wo_60.png
 
-## Dependencies
+## Build
+
+FreeWifiHK can be built from source using the standard Android-Eclipse build
+environment, plus the following dependencies:
 
 * Google Play Services library (installed under `../google-play-services_lib`)
 * Android Support library v4 (installed under `libs`)
-
-## Usage
-
-1. Convert the [FreeWifiHK-DB][db] to JSON in `assets/hotspots.json`
-2. Build using Eclipse
+* The [FreeWifiHK-DB][db] (converted to JSON as `assets/hotspots.json`)
 
   [db]: https://github.com/freewifihk/freewifihk-db
 
