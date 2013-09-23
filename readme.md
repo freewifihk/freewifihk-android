@@ -2,6 +2,11 @@
 
 Discover free Wi-Fi hotspots in Hong Kong.
 
+[![FreeWifiHK on Google Play][playth]][play]
+
+  [play]: https://play.google.com/store/apps/details?id=com.onarray.freewifihk
+  [playth]: https://developer.android.com/images/brand/en_generic_rgb_wo_60.png
+
 ## Dependencies
 
 * Google Play Services library (installed under `../google-play-services_lib`)
